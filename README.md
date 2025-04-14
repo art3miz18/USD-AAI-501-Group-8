@@ -2,7 +2,7 @@
 
 ---
 
-# Meta Global OCR API
+# DOCUMENT OCR KIE
 
 This is a Flask-based API that provides Optical Character Recognition (OCR) capabilities for document processing. It can handle images of various documents such as passports and IDs, extracting important information including names, dates, document types, and more.
 
@@ -63,17 +63,17 @@ Example using `curl`:
 
 ```bash
 curl -X POST http://<your-server-ip>:8080/ocr/meta-global-ocr \
--H "GlobalOCRToken: <your_token>" \
+-H "KIEToken: <your_token>" \
 -F "front_img=@path_to_image" \
 -F "back_img=@path_to_back_image"
 ```
 
 ### Endpoints
 
-#### 1. `/ocr/meta-ocr-test` (POST)
+#### 1. `/ocr/kie-ocr-test` (POST)
 A test endpoint to verify token validation and API connectivity.
 
-#### 2. `/ocr/meta-global-ocr` (POST)
+#### 2. `/ocr/kie-ocr` (POST)
 Extracts details from the front and back of a document.
 
 **Request Parameters**:
